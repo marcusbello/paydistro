@@ -1,11 +1,12 @@
-run_a:
-	cd a && go run a.go
+token:
+	go run token.go
 
-run_b:
-	cd b && go run b.go
+aedc:
+	go run aedc.go
 
-run_c:
-	cd c && go run c.go
+wallet:
+	go run wallet.go
 
 kafka:
 	docker-compose up
+

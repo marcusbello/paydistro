@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto.v1;
+option go_package = "github.com/marcusbello/paydistro/proto/v1";
+
+message GetUserReq {
+  string number = 1;
+  string amount = 2;
+}
+
+message GetUserResp {
+  string full_name = 1;
+  string number = 2;
+}
+
+service TokenService {
+  rpc GetUser(GetUserReq) returns (GetUserResp) {};
+}
